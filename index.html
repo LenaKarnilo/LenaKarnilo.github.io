@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/fonts/inter-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/inter-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/inter-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <!-- Title -->
+    <title>About</title>
+  </head>
+
+  <body>
+    <svg width="0" height="0" style="display: none">
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-email">
+        <path
+          d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
+          fill="black"
+          fill-opacity="0.54"
+        ></path>
+      </symbol>
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-linkedin">
+        <path
+          d="M10 18H7V8H10V18ZM21 18H18V12.658C18 11.266 17.504 10.573 16.521 10.573C15.742 10.573 15.248 10.961 15 11.738V18H12C12 18 12.04 9 12 8H14.368L14.551 10H14.613C15.228 9 16.211 8.322 17.559 8.322C18.584 8.322 19.413 8.607 20.046 9.323C20.683 10.04 21 11.002 21 12.353V18Z"
+          fill="black"
+          fill-opacity="0.54"
+        ></path>
+        <path
+          d="M8.49995 7C9.35599 7 10.05 6.32843 10.05 5.5C10.05 4.67157 9.35599 4 8.49995 4C7.64391 4 6.94995 4.67157 6.94995 5.5C6.94995 6.32843 7.64391 7 8.49995 7Z"
+          fill="black"
+          fill-opacity="0.54"
+        ></path>
+      </symbol>
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-instagram">
+        <rect x="5" y="5" width="14" height="14" rx="4" stroke="black" stroke-opacity="0.54" stroke-width="2"></rect>
+        <circle cx="12" cy="12" r="3" stroke="black" stroke-opacity="0.54" stroke-width="2"></circle>
+        <circle cx="16.5" cy="7.5" r="0.5" fill="black" fill-opacity="0.54"></circle>
+      </symbol>
+    </svg>
+
+    <div class="layout">
+      <!-- Header -->
+      <header class="header">
+        <p class="header__name">Lena Karnilo</p>
+
+        <p class="header__text">About</p>
+
+        <a class="header__email" href="mailto:e.a.karnilo@gmail.com">Email</a>
+        <!-- Contact list -->
+        <ul class="contact-list header__contacts">
+          <li>
+            <a href="mailto:e.a.karnilo@gmail.com" title="Email">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/elena-karnilo-2642a2105/" rel="ugc" title="Linkedin" target="_blank">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/lena.karnilo/" rel="ugc" title="Instagram" target="_blank">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-instagram"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <!-- End Contact List -->
+      </header>
+      <!-- End Header -->
+
+      <!-- Content -->
+      <main class="content">
+        <h1 class="visually-hidden">About...</h1>
+
+        <div class="box">
+          <img class="mb-40 hide-for-mobile" src="/images/photo.jpg" width="608" height="425" alt="Photo..." />
+          <p class="font-weight-light title-color font-size-35">Hi! 👋</p>
+          <p>
+            I’m Lena. Product Designer with over 4 years of experience working with mobile and web products. Based in Minsk,
+            Belarus.
+          </p>
+          <p>
+            Currently product designer at <a class="link-with-arrow" href="/ganttpro.html">Ganttpro</a> <br />
+            In my free time, designing <a class="link-with-arrow" href="#">Time log</a>
+          </p>
+          <p>Outside of work, I shoot film, play badminton, and walk a lot.</p>
+          <p>I would be glad to meet you! :)</p>
+        </div>
+      </main>
+      <!-- End Content -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <!-- Contact list -->
+        <ul class="contact-list footer__contacts">
+          <li>
+            <a href="mailto:e.a.karnilo@gmail.com" title="Email">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/elena-karnilo-2642a2105/" rel="ugc" title="Linkedin" target="_blank">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/lena.karnilo/" rel="ugc" title="Instagram" target="_blank">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-instagram"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <!-- End Contact List -->
+      </footer>
+      <!-- End Footer -->
+    </div>
+  </body>
+</html>
