@@ -10,7 +10,7 @@
     <link rel="preload" href="/fonts/inter-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="/fonts/inter-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- Title -->
     <title>About</title>
   </head>
@@ -83,7 +83,14 @@
         <h1 class="visually-hidden">About...</h1>
 
         <div class="box">
-          <img class="mb-40 hide-for-mobile" src="/images/photo.jpg" width="608" height="425" alt="Photo..." />
+          <img
+            class="mb-40 hide-for-mobile"
+            src="/images/photo.jpg"
+            srcset="/images/photo_2x.jpg 2x"
+            width="590"
+            height="329"
+            alt="Photo..."
+          />
           <p class="font-weight-light title-color font-size-35">Hi! 👋</p>
           <p>
             I’m Lena. Product Designer with over 4 years of experience working with mobile and web products. Based in Minsk,
@@ -101,6 +108,8 @@
 
       <!-- Footer -->
       <footer class="footer">
+        <p class="footer__coryright">© 2021</p>
+
         <!-- Contact list -->
         <ul class="contact-list footer__contacts">
           <li>

@@ -436,7 +436,15 @@ h2 {
 }
 
 a {
-  color: #424242;
+  text-decoration: none;
+  color: #007e70;
+
+  transition: color, 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #212121;
 }
 
 p,
@@ -652,16 +660,17 @@ p,
 }
 
 .image-wrapper {
+  display: block;
   width: 100%;
-  height: 448px;
+  height: auto;
+  padding: 28px 16px;
+
+  background-color: #f2f3f5;
 }
 
 .image-wrapper img {
   display: block;
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
+  margin: 0 auto;
 }
 
 /* Layout */
@@ -687,9 +696,32 @@ p,
   margin: 0;
 
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   text-decoration: none;
+  color: #212121;
+
+  border-bottom: 2px solid transparent;
+
+  transition: border-color, 0.2s;
+}
+
+a.header__name:hover {
+  border-color: #424242;
+}
+
+.header__email {
+  color: #212121;
+
+  border-bottom: 2px solid transparent;
+
+  transition: border-color, 0.2s;
+}
+
+.header__email:hover {
+  font-weight: bold;
+
+  border-color: #424242;
 }
 
 .header__text,
@@ -698,7 +730,7 @@ p,
   margin-bottom: 0;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   text-decoration: none;
   color: #212121;
@@ -710,6 +742,21 @@ p,
   left: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+.header__text a {
+  display: inline-block;
+  vertical-align: middle;
+
+  text-decoration: none;
+  color: #212121;
+
+  border-bottom: 2px solid transparent;
+  transition: border-color, 0.2s;
+}
+
+.header__text a:hover {
+  border-color: #424242;
 }
 
 /* Content */
@@ -728,12 +775,19 @@ p,
 
 /* Footer */
 .footer {
-  display: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .footer__contacts {
   display: none;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.footer__coryright {
+  margin: 0;
+
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -761,13 +815,18 @@ p,
   }
 
   .footer {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    padding-top: 24px;
-    padding-bottom: 42px;
+    padding: 36px 24px;
   }
 
   .footer__contacts {
     display: flex;
+  }
+
+  .footer__coryright {
+    text-align: left;
   }
 }
