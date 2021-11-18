@@ -711,6 +711,7 @@ a.header__name:hover {
 }
 
 .header__email {
+  text-decoration: none;
   color: #212121;
 
   border-bottom: 2px solid transparent;
