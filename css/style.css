@@ -721,6 +721,7 @@ a.header__name:hover {
 
 .header__email:hover {
   font-weight: bold;
+  text-decoration: none;
 
   border-color: #424242;
 }
